@@ -38,3 +38,7 @@ Suppose the Netbeans and GlassFish installations are complete before getting sta
    <img src="pic/pic-2.png" alt="" style="zoom: 33%;" />
 4. Assign the instance at the **Add Application Server** section. Click **Finish** to complete the creation project.
    <img src="pic/pic-3.png" style="zoom: 33%;" />
+
+### Running Web Project
+
+After the creation the web project, run the application server to check the web project is functioning. Right-click the **tsbweb** project and select the **Run** item to build the project. The browser will open the demo page once the deployment has been done.
