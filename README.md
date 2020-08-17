@@ -17,7 +17,7 @@ Below tools are used going through the repository building:
 Add the GlassFish aforementioned  as an new application server which running a java web project. Follow the below steps to complete the new application server addition:
 
 1. Uncompress the glassfish to the target path. `GLASSFISH_HOME` is the directory that place the glassfish, e.g, `/Users/Demo/Dev/Labs/tsbweb`.
-2. Open the netbean and switch the **Services** perspective as below illustration:
+2. Open the netbean and switch the **Services** perspective as below illustration: <br/>
    <img src="pic/pic-4.png" alt="" height="250" />
 3. Right-click the **Servers** item and click **Add Server...** option to launch the **Add Server Instance** wizard.
 4. Select the **GlassFish Server** option of the Server field and enter the server instance name of the **Name** field. Click **Next** to the next step.
