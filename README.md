@@ -18,14 +18,14 @@ Add the GlassFish aforementioned  as an new application server which running a j
 
 1. Uncompress the glassfish to the target path. `GLASSFISH_HOME` is the directory that place the glassfish, e.g, `/Users/Demo/Dev/Labs/tsbweb`.
 2. Open the netbean and switch the **Services** perspective as below illustration:
-   <img src="pic/pic-4.png alt="" />
+   <img src="pic/pic-4.png" alt="" height="250" />
 3. Right-click the **Servers** item and click **Add Server...** option to launch the **Add Server Instance** wizard.
 4. Select the **GlassFish Server** option of the Server field and enter the server instance name of the **Name** field. Click **Next** to the next step.
-   <img src="pic/pic-5.png" alt="" style="zoom:35%;" />
+   <img src="pic/pic-5.png" alt="" />
 5. Assign the absolute path of the GLASSFISH_HOME as the **Installation Location**. Click **Next** to the next step.
-   <img src="pic/pic-6.png" alt="" style="zoom:35%;" />
+   <img src="pic/pic-6.png" alt="" />
 6. Enter the **tsbweb** as the **Domain** field. Click **Finish** to add the server.
-   <img src="pic/pic-7.png" alt="" style="zoom:35%;" />
+   <img src="pic/pic-7.png" alt="" />
 
 ### Create New Project
 
