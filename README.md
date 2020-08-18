@@ -20,7 +20,7 @@ Add the GlassFish aforementioned  as an new application server which running a j
 2. Open the netbean and switch the **Services** perspective as below illustration: <br/>
    <img src="pic/pic-4.png" alt="" height="250" />
 3. Right-click the **Servers** item and click **Add Server...** option to launch the **Add Server Instance** wizard.
-4. Select the **GlassFish Server** option of the Server field and enter the server instance name of the **Name** field. Click **Next** to the next step.
+4. Select the **GlassFish Server** option of the Server field and enter the server instance name of the **Name** field. Click **Next** to the next step. <br/>
    <img src="pic/pic-5.png" alt="" height="400" />
 5. Assign the absolute path of the GLASSFISH_HOME as the **Installation Location**. Click **Next** to the next step.
    <img src="pic/pic-6.png" alt="" height="460" />
