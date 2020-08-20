@@ -23,7 +23,8 @@ import javax.servlet.http.HttpServletResponse;
 public class MessageTwoServlet extends HttpServlet {
 
 
-    @Inject private Message message;
+    @Inject 
+    private Message message;
     
 
     /**
