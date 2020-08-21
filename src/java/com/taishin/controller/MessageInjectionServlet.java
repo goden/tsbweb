@@ -5,10 +5,10 @@
  */
 package com.taishin.controller;
 
-import com.taishin.model.Message;
-import com.taishin.model.MessageOne;
+import com.taishin.model.MessageInjection;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,17 +19,12 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author goden
  */
-@WebServlet(name = "MessageOneServlet", urlPatterns = {"/MessageOne"})
-public class MessageOneServlet extends HttpServlet {
-
-    private Message message;
-
-    @Override
-    public void init() throws ServletException {
-        message = new MessageOne();
-    }
+@WebServlet(name = "MessageInjectionServlet", urlPatterns = {"/message_injection"})
+public class MessageInjectionServlet extends HttpServlet {
     
-    
+    @Inject
+    private MessageInjection injection;
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -43,7 +38,7 @@ public class MessageOneServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            out.print(message.get());
+            out.print(injection.get());
         }
     }
 

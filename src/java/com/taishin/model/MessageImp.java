@@ -9,16 +9,11 @@ package com.taishin.model;
  *
  * @author goden
  */
-public class MessageOne implements Message {
-    
-    public MessageOne() {
-        System.out.println("MessageOne created.");
-    }
-    
+public class MessageImp implements Message {
 
     @Override
     public String get() {
-        return "A message from MessageOne. An example using message without CDI.";
+        return "The message from the MessageImp.";
     }
     
 }

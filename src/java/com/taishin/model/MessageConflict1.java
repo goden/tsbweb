@@ -12,11 +12,11 @@ import javax.enterprise.context.RequestScoped;
  * @author goden
  */
 @RequestScoped
-public class MessageTwo implements Message {
+public class MessageConflict1 implements MessageConflict {
 
     @Override
-    public String get() {
-        return "A message from MessageTwo. An example using message with CDI.";
+    public String conflict() {
+        return "The message from the MessageConflict1.";
     }
     
 }

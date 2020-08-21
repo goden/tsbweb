@@ -6,9 +6,9 @@
 package com.taishin.controller;
 
 import com.taishin.model.Message;
+import com.taishin.model.MessageImp;
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,12 +19,12 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author goden
  */
-@WebServlet(name = "DuplicateInjectionServlet", urlPatterns = {"/DuplicateInjection"})
-public class DuplicateInjectionServlet extends HttpServlet {
-    
-    @Inject
-    private Message message;
+@WebServlet(name = "MessageServlet", urlPatterns = {"/message"})
+public class MessageServlet extends HttpServlet {
 
+    private Message message = new MessageImp();
+
+    
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -38,7 +38,7 @@ public class DuplicateInjectionServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            out.println(message.get());
+            out.print(message.get());
         }
     }
 

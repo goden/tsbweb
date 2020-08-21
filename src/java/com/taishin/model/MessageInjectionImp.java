@@ -12,11 +12,11 @@ import javax.enterprise.context.RequestScoped;
  * @author goden
  */
 @RequestScoped
-public class MessageInjection1 implements Message {
+public class MessageInjectionImp implements MessageInjection {
 
     @Override
     public String get() {
-        return "A message from MessageInjection1. An exception will be thrown.";
+        return "The message from the MessageInjectionImp instance.";
     }
     
 }

@@ -5,7 +5,7 @@
  */
 package com.taishin.controller;
 
-import com.taishin.model.Message;
+import com.taishin.model.MessageConflict;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.inject.Inject;
@@ -19,13 +19,11 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author goden
  */
-@WebServlet(name = "MessageTwoServlet", urlPatterns = {"/MessageTwo"})
-public class MessageTwoServlet extends HttpServlet {
-
-
-    @Inject 
-    private Message message;
+@WebServlet(name = "MessageConflictServlet", urlPatterns = {"/message_conflict"})
+public class MessageConflictServlet extends HttpServlet {
     
+    @Inject
+    private MessageConflict conflict;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -40,7 +38,7 @@ public class MessageTwoServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            out.print(message.get());
+            out.print(conflict.conflict());
         }
     }
 
