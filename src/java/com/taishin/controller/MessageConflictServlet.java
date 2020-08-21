@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author goden
  */
-@WebServlet(name = "MessageConflictServlet", urlPatterns = {"/message_conflict"})
+@WebServlet(name = "MessageConflictServlet", urlPatterns = {"/messageConflict"})
 public class MessageConflictServlet extends HttpServlet {
     
     @Inject

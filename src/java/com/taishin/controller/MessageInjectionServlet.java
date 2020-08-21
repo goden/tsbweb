@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author goden
  */
-@WebServlet(name = "MessageInjectionServlet", urlPatterns = {"/message_injection"})
+@WebServlet(name = "MessageInjectionServlet", urlPatterns = {"/messageInjection"})
 public class MessageInjectionServlet extends HttpServlet {
     
     @Inject
