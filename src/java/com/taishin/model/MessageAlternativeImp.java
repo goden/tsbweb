@@ -12,8 +12,8 @@ import javax.enterprise.inject.Alternative;
  *
  * @author goden
  */
-@RequestScoped
 @Alternative
+@RequestScoped
 public class MessageAlternativeImp implements MessageAlternative {
 
     @Override
