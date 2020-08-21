@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author goden
  */
-@WebServlet(name = "MessageCustQualifierServlet", urlPatterns = {"/MessageCustQualifier"})
+@WebServlet(name = "MessageCustQualifierServlet", urlPatterns = {"/messageCustQualifier"})
 public class MessageCustQualifierServlet extends HttpServlet {
     
     @Inject

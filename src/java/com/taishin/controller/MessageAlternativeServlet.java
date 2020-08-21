@@ -19,9 +19,14 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author goden
  */
-@WebServlet(name = "MessageAlternativeServlet", urlPatterns = {"/MessageAlternative"})
+@WebServlet(name = "MessageAlternativeServlet", urlPatterns = {"/messageAlternative"})
 public class MessageAlternativeServlet extends HttpServlet {
 
+    /**
+     * Use 
+     */
+    
+    
     @Inject
     private MessageAlternative alternative;
     /**
