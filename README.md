@@ -54,3 +54,52 @@ In order to fast generate the entity classes from the database, follow the below
    <img src="pic/pic-9.png" height="415" />
 4. Specify the default mapping options. Select the **Fully Qualified Database Table Names** and **Attributes for Regenerating Tables** options. Click **Finish** to complete the generation.
    <img src="pic/pic-10.png" height="415" />
+
+### New Table Generation in Existing Database
+
+In case of generation new table in existing database as below snippet, how to generate the table and insert the required data?
+
+```sql
+CREATE TABLE PERSON
+(
+	ID INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+	FIRSTNAME VARCHAR(20),
+	LASTNAME VARCHAR(20),
+	STREET VARCHAR(50),
+	CITY VARCHAR(20),
+  CONSTRAINT primary_key PRIMARY KEY (ID)
+);
+
+
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('Laura','Steel','429 Seventh Av.','Dallas');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('Susanne','King','366 - 20th Ave.','Olten');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('Anne','Miller','20 Upland Pl.','Lyon');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('Michael','Clancy','542 Upland Pl.','San Francisco');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('Sylvia','Ringer','365 College Av.','Dallas');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('Laura','Miller','294 Seventh Av.','Paris');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('Laura','White','506 Upland Pl.','Palo Alto');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('James','Peterson','231 Upland Pl.','San Francisco');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('Andrew','Miller','288 - 20th Ave.','Seattle');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('James','Schneider','277 Seventh Av.','Berne');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('Anne','Fuller','135 Upland Pl.','Dallas');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('Julia','White','412 Upland Pl.','Chicago');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('George','Ott','381 Upland Pl.','Palo Alto');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('Laura','Ringer','38 College Av.','New York');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('Bill','Karsen','53 College Av.','Oslo');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('Bill','Clancy','319 Upland Pl.','Seattle');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('John','Fuller','195 Seventh Av.','New York');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('Laura','Ott','443 Seventh Av.','Lyon');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('Sylvia','Fuller','158 - 20th Ave.','Paris');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('Susanne','Heiniger','86 - 20th Ave.','Dallas');
+INSERT INTO PERSON(FIRSTNAME,LASTNAME,STREET,CITY) VALUES('Janet','Schneider','309 - 20th Ave.','Oslo');
+```
+
+Follow the below steps to complete the table generation in exiting database:
+
+1. Switch the **Services** perspective. Find the database instance from the **Database** item.
+   <img src="pic/pic-11.png" height="415" />
+2. Right-click the instance and select the **Execute Command...** from the contextmenu. Post the SQL snippet and run the SQL by clicking the <img src="pic/pic-12.png" height="23" /> icon. Ensure the table generation is OK after the command execution is done.
+3. Repeat the aforementioned steps in the [New Table Generation in Existing Database](#new_table_generation_in_db) section to generate the `Person` table.
+
+### Generate RESTFul Web Services from Entity Classes
+
