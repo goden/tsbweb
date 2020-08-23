@@ -101,5 +101,13 @@ Follow the below steps to complete the table generation in exiting database:
 2. Right-click the instance and select the **Execute Command...** from the contextmenu. Post the SQL snippet and run the SQL by clicking the <img src="pic/pic-12.png" height="23" /> icon. Ensure the table generation is OK after the command execution is done.
 3. Repeat the aforementioned steps in the [New Table Generation in Existing Database](#new_table_generation_in_db) section to generate the `Person` table.
 
-### Generate RESTFul Web Services from Entity Classes
+### Generate RESTful Web Services from Entity Classes
+
+After the generation of the entity class from database is complete, the mapping RESTful service should be created.
+
+1. Launch the wizard to select the **RESTful Web Services from Entity Classes...** item.
+   <img src="pic/pic-13.png" height="415" />
+2. Select the all entity classes and click the **Next**.
+   <img src="pic/pic-14.png" height="415">
+3. Select the target directory to place the generated service class files. Enter the com.taishin.service as the **Resource Package** field. Click **Finish** to complete the generation.<img src="pic/pic-15.png" height="415">
 
