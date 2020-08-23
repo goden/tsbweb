@@ -8,6 +8,7 @@
     <class>com.taishin.model.entity.PurchaseOrder</class>
     <class>com.taishin.model.entity.Product</class>
     <class>com.taishin.model.entity.Manufacturer</class>
+    <class>com.taishin.model.entity.Person</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/sample"/>
