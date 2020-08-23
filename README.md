@@ -42,3 +42,15 @@ Suppose the Netbeans and GlassFish installations are complete before getting sta
 ### Running Web Project
 
 Run the application server to make sure the web project is functioning on the application server. Right-click the **tsbweb** project and select the **Run** item to build the project. The browser will open the demo page once the deployment has been done.
+
+### Generate New Entity Classes from Database
+
+In order to fast generate the entity classes from the database, follow the below steps to complete the generation:
+
+1. Right-click the project and select the **Entity Classes from Database...** item. Click **Next** to launch the wizard.
+2. Assign the right database connection and move all the tables of the **Available Tables** to the **Selected Tables**. Click the **Next** to the next  step.
+   <img src="pic/pic-8.png" height="430" />
+3. Assign the package and **com.taishin.model.entity** is the destination. Click **Next** to the next step.
+   <img src="pic/pic-9.png" height="415" />
+4. Specify the default mapping options. Select the **Fully Qualified Database Table Names** and **Attributes for Regenerating Tables** options. Click **Finish** to complete the generation.
+   <img src="pic/pic-10.png" height="415" />
