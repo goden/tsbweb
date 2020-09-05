@@ -101,6 +101,13 @@ Follow the below steps to complete the table generation in exiting database:
 2. Right-click the instance and select the **Execute Command...** from the contextmenu. Post the SQL snippet and run the SQL by clicking the <img src="pic/pic-12.png" height="23" /> icon. Ensure the table generation is OK after the command execution is done.
 3. Repeat the aforementioned steps in the [New Table Generation in Existing Database](#new_table_generation_in_db) section to generate the `Person` table.
 
+### Generate Session Beans for Entity Classes
+
+
+
+1. Launch the wizard to select the **Session Beans for Entity Classes** item by right-clicking the project. 
+2. Select the **Session Beans for Entity Classes** of the **Persistence** item and click **Next** to the next step.
+
 ### Generate RESTful Web Services from Entity Classes
 
 After the generation of the entity class from database is complete, the mapping RESTful service should be created.
